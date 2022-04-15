@@ -1,4 +1,5 @@
 
+   
 <%- include('../partials/header') %>
 
 <h3>Edit Skill #<%= skill.id %></h3>
@@ -6,11 +7,11 @@
   <input type="text" name="skill" value="<%= skill.skill %>">
   <p>
     <label>
-    <input type="checkbox" name="learned" <%= (skill.quality) ? 'checked' : '' %>>
-    Learned
+    <input type="checkbox" name="quality" <%= (skill.quality) ? 'checked' : '' %>>
+    Quality
     </label>
   </p>
-  <button type="submit">Save Todo</button>
+  <button type="submit">Save SKill</button>
 </form>
 
 <%- include('../partials/footer') %>

@@ -1,9 +1,10 @@
 
+   
 <%- include('../partials/header') %>
 
-  <h1>Skill id #<%= skill.id %></h1>
-  <h3><%= skill.skill %></h3>
-  <h3>Quality: <%= skill.learned ? 'good' : 'not so good' %></h3>
-  <a href="/skills/<%= skill.id %>/edit">Edit skill</a>
+<h1>Skill id #<%= skill.id %></h1>
+<h3><%= skill.skill %></h3>
+<h3>Quality: <%= skill.quality ? 'good' : 'not so good' %></h3>
+<a href="/skills/<%= skill.id %>/edit">Edit skill</a>
 
 <%- include('../partials/footer') %>
